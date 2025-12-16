@@ -1,0 +1,11 @@
+.calculatorContainer {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 46px;
+    border-color: black;
+    width: 490px;
+    gap: 33px;
+    background-color: var(--main-color);
+    box-shadow: var(--main-box-shadow);
+    padding: 34px 37px 31px 24px;
+}

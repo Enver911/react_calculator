@@ -1,0 +1,26 @@
+.displayContainer {
+    height: 157px;
+    width: 435px;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 25px;
+    box-shadow: inset -4px -4px 15px var(--illuminatedSideColor), inset 4px 4px 15px var(--darkenedSideColor);
+    text-align: right;
+    word-break: break-word;
+    overflow: auto;
+    font-size: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    box-shadow: 4px 4px 15px var(--darkenedSideColor), -4px -4px 15px var(--illuminatedSideColor);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--illuminatedSideColor);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}

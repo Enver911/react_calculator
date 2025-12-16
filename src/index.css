@@ -1,0 +1,35 @@
+:root {
+    --main-color: rgb(44, 45, 50);
+    --darkenedSideColor: rgb(29, 30, 33);
+    --illuminatedSideColor: rgb(56, 59, 64);
+    --main-box-shadow: 8px 8px 15px var(--darkenedSideColor), -8px -8px 15px var(--illuminatedSideColor);
+    --main-text-color: rgb(248, 254, 250);
+    --main-text-shadow: 0px 0px 15px rgb(31, 184, 40);
+}
+
+[data-theme="light"] {
+    --main-color: rgb(202, 210, 223);
+    --darkenedSideColor: rgb(29, 30, 33);
+    --illuminatedSideColor: rgb(56, 59, 64);
+    --main-box-shadow: 8px 8px 15px var(--darkenedSideColor), -8px -8px 15px var(--illuminatedSideColor);
+    --main-text-color: rgb(248, 254, 250);
+    --main-text-shadow: 0px 0px 15px rgb(31, 184, 40);
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-color);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--main-text-color);
+    text-shadow: var(--main-text-shadow);
+    font-family: Calibri, sans-serif;
+}

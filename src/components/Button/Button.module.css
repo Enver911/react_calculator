@@ -1,0 +1,19 @@
+.buttonContainer {
+    height: 85px;
+    width: 82px;
+    box-shadow: var(--main-box-shadow);
+    border: none;
+    border-radius: 11px;
+    background-color: var(--main-color);
+    padding: 0;
+    font-size: 50px;
+}
+
+.buttonContainer:active {
+    box-shadow: inset -4px -4px 15px var(--illuminatedSideColor), inset 4px 4px 15px var(--darkenedSideColor) !important;
+}
+
+.buttonContainer:hover {
+    box-shadow: 4px 4px 15px var(--darkenedSideColor), -4px -4px 15px var(--illuminatedSideColor);
+    cursor: pointer;
+}
