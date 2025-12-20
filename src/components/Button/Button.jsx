@@ -12,7 +12,6 @@ function Button({sign, setExpression}) {
             case '±':
                 setExpression((prevValue) => {
                     let match = prevValue.match(/^-\((.*)\)$/);
-
                     if (match)
                         return match[1];
 
@@ -25,9 +24,9 @@ function Button({sign, setExpression}) {
                     if (match)
                         return '-' + match[1];
 
-                    match = prevValue.match(/^.*$/);
+                    match = prevValue.match(/^(.*)$/);
                     if (match)
-                        return '-' + '(' + match[0] + ')';
+                        return '-' + '(' + match[1] + ')';
 
                     return prevValue;
                 });

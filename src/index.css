@@ -1,7 +1,8 @@
 :root {
     --scale-factor-y: min(100vh, 960px) / 960px;
     --scale-factor-x: min(100vw, 510px) / 510px;
-    --scale-factor: min(var(--scale-factor-x), var(--scale-factor-y));
+    /*--scale-factor: min(var(--scale-factor-x), var(--scale-factor-y));*/
+    --scale-factor: 1;
     --main-color: rgb(44, 45, 50);
     --darkenedSideColor: rgb(29, 30, 33);
     --illuminatedSideColor: rgb(56, 59, 64);
@@ -12,14 +13,14 @@
 
 [data-theme="light"] {
     --main-color: rgb(202, 210, 223);
-    --darkenedSideColor: rgb(29, 30, 33);
-    --illuminatedSideColor: rgb(56, 59, 64);
+    --darkenedSideColor: rgb(159, 165, 177);
+    --illuminatedSideColor: rgb(227, 237, 249);
     --main-box-shadow: calc(8px * var(--scale-factor)) calc(8px * var(--scale-factor)) calc(15px * var(--scale-factor)) var(--darkenedSideColor), calc(-8px * var(--scale-factor)) calc(-8px * var(--scale-factor)) calc(15px * var(--scale-factor)) var(--illuminatedSideColor);
-    --main-text-color: rgb(248, 254, 250);
-    --main-text-shadow: calc(0px * var(--scale-factor)) calc(0px * var(--scale-factor)) calc(15px * var(--scale-factor)) rgb(31, 184, 40);
+    --main-text-color: rgb(132, 135, 142);
+    --main-text-shadow: none;
 }
 
-#root {
+:root {
     display: flex;
     justify-content: center;
     align-items: center;

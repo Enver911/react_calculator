@@ -2,10 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     border-radius: calc(46px * var(--scale-factor));
-    border-color: black;
     width: calc(490px * var(--scale-factor));
     gap: calc(33px * var(--scale-factor));
     background-color: var(--main-color);
     box-shadow: var(--main-box-shadow);
-    padding: calc(34px * var(--scale-factor)) calc(37px * var(--scale-factor)) calc(31px * var(--scale-factor)) calc(24px * var(--scale-factor));
+    padding: calc(10px * var(--scale-factor)) calc(37px * var(--scale-factor)) calc(31px * var(--scale-factor)) calc(24px * var(--scale-factor));
 }
