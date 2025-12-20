@@ -11,10 +11,25 @@ function Button({sign, setExpression}) {
                 break;
             case '±':
                 setExpression((prevValue) => {
-                    if (prevValue.match(/-[\d.]+$/))
-                        return prevValue.replace(/-[\d.]+$/, match => match.slice(1));
-                    else
-                        return prevValue.replace(/[\d.]+$/, match => '-' + match);
+                    let match = prevValue.match(/^-\((.*)\)$/);
+
+                    if (match)
+                        return match[1];
+
+
+                    match = prevValue.match(/^-(.*)$/);
+                    if (match)
+                        return match[1];
+
+                    match = prevValue.match(/^\((.*)\)$/);
+                    if (match)
+                        return '-' + match[1];
+
+                    match = prevValue.match(/^.*$/);
+                    if (match)
+                        return '-' + '(' + match[0] + ')';
+
+                    return prevValue;
                 });
                 break;
             case '%':
