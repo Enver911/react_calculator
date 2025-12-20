@@ -1,5 +1,5 @@
 :root {
-    --scale-factor: 0.8;
+    --scale-factor: 1;
     --main-color: rgb(44, 45, 50);
     --darkenedSideColor: rgb(29, 30, 33);
     --illuminatedSideColor: rgb(56, 59, 64);
@@ -35,41 +35,12 @@
     font-family: Calibri, sans-serif;
 }
 
-
-@media (max-width: 500px) {
-    :root {
-        --scale-factor: 0.7;
-    }
-}
-
-@media (max-width: 375px) {
-    :root {
-        --scale-factor: 0.5;
-    }
+:root {
+    --scale-factor-y: min(100vh, 960px) / 960px;
+    --scale-factor-x: min(100vw, 510px) / 510px;
+    --scale-factor: min(var(--scale-factor-x), var(--scale-factor-y));
 }
 
 
-@media (max-height: 930px) {
-    :root {
-        --scale-factor: 0.7;
-    }
-}
 
-@media (max-height: 650px) {
-    :root {
-        --scale-factor: 0.5;
-    }
-}
-
-@media (max-height: 500px) {
-    :root {
-        --scale-factor: 0.4;
-    }
-}
-
-@media (max-height: 375px) {
-    :root {
-        --scale-factor: 0.3;
-    }
-}
 
