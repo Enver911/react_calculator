@@ -1,8 +1,7 @@
 :root {
     --scale-factor-y: min(100vh, 960px) / 960px;
     --scale-factor-x: min(100vw, 510px) / 510px;
-    /*--scale-factor: min(var(--scale-factor-x), var(--scale-factor-y));*/
-    --scale-factor: 1;
+    --scale-factor: min(var(--scale-factor-x), var(--scale-factor-y));
     --main-color: rgb(44, 45, 50);
     --darkenedSideColor: rgb(29, 30, 33);
     --illuminatedSideColor: rgb(56, 59, 64);
