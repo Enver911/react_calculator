@@ -1,5 +1,5 @@
 :root {
-    --scale-factor-y: min(100vh, 1200px) / 1200px;
+    --scale-factor-y: min(100vh, 1100px) / 1100px;
     --scale-factor-x: min(100vw, 510px) / 510px;
     --scale-factor: min(var(--scale-factor-x), var(--scale-factor-y));
     --main-color: rgb(44, 45, 50);
